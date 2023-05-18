@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.18"/>
+  <object class="GtkWindow" id="MainWindow">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Yuzu Updater</property>
+    <property name="default_width">355</property>
+    <property name="default_height">20</property>
+    <property name="decorated">False</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkProgressBar" id="_progress">
+            <property name="width-request">355</property>
+            <property name="height-request">20</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="double-buffered">False</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="text" translatable="yes">Checking for Updates</property>
+            <property name="show-text">True</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
